@@ -50,12 +50,88 @@
 
 <h3>Attributes</h3>
 <p>Add images</p>
-<img src="django.png" alt="django">
+<img src="django.png" alt="django" width="180" height="180">
 <p>Add links</p>
 To learn more about me, you may check:
 <a href='https://qianqianshan.com/projects/' target='_blank'> https://qianqianshan.com/projects</a> for the projects I have done.
 <p>Combine image and links</p>
 <a href="https://www.djangoproject.com/" target="_blank"><img src="django.png" alt="django_logo" width="80" height="80" /></a>
+
+<h3>Tables</h3>
+<table border="1">
+  <!-- header row thead, optional -->
+  <thead>
+    <th>Number</th>
+    <th>Color</th>
+    <th>Country</th>
+  </thead>
+  <!-- add rows to table -->
+  <tr>
+    <td>250</td>
+    <td>Red</td>
+    <td>USA</td>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>Blue</td>
+    <td>France</td>
+  </tr>
+</table>
   </body>
 
+
+  <!-- Quiz: create a table with images from online websites -->
+  <table>
+    <thead>
+      <th>Country Name</th>
+      <th>Country Flag</th>
+      <th>GDP (Millions of USD)</th>
+    </thead>
+
+    <tr>
+      <td>USA</td>
+      <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/190px-Flag_of_the_United_States.svg.png" alt="usflag" width="100" height="100"> </td>
+      <td>18,561,930</td>
+    </tr>
+
+    <tr>
+      <td>India</td>
+      <td> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/150px-Flag_of_India.svg.png" alt="indiaflag" width="100" height="100"> </td>
+       <td>2,250,990</td>
+    </tr>
+
+    <tr>
+      <td>United Kingdom</td>
+      <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/200px-Flag_of_the_United_Kingdom.svg.png" alt="ukflag" width="100" height="100"> </td>
+      <td>2,649,890</td>
+    </tr>
+  </table>
+
+<h3>Forms</h3>
+
+<h4>Log In</h4>
+<h5>Please input your email and password</h5>
+<form action='https://qianqianshan.com' method='get'>
+  <!-- input tag
+    type: type of input
+    name: name of input can be refered later in other files
+  -->
+  <p>Enter email:</p>
+<input type="email" name="useremail" placeholder="Email here" required>
+
+<!-- password type -->
+<input type="password" name="password" placeholder="Password please">
+<!-- submit type -->
+<input type="submit" name="" value="Click me to my personal website">
+<!-- choose color -->
+<h6>Choose color by clicking on the butto with default color pickern</h6>
+<input type="color" name="" value="">
+
+<h3>Use label to have label/text to be on the same level of input block</h3>
+<label for="userinput">Enter input</label>
+  <!-- set id for input to link the above label with input -->
+  <input id='userinput' type="email" name="useremail" value="Email here">
+
+
+</form>
 </html>
