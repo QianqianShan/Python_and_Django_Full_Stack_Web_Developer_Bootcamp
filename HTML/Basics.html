@@ -132,6 +132,32 @@ To learn more about me, you may check:
   <!-- set id for input to link the above label with input -->
   <input id='userinput' type="email" name="useremail" value="Email here">
 
+</form>
 
+<h3>Buttons, Dropdown menu, Textarea input</h3>
+
+<h6>Hotel Feedback Form</h6>
+<form class="" action="" method="get">
+  <p>Are you from inside the US? Or outside the US?</p>
+  <label for="inus">Inside:</label>
+  <!-- assign the same name for the two radio buttons to link them, so only one of
+  can be selected -->
+  <input id = 'inusa' type="radio" name="loc" value="inside">
+  <label for="outsideus">Outside US:</label>
+  <input id = 'outusa' type="radio" name="loc" value="outside">
+<!-- dropdown menu with select tag -->
+  <p>How was your service? </p>
+  <select class="" name="stars">
+    <option value="Great">3</option>
+    <option value="Okay">2</option>
+    <option value="Bad">1</option>
+  </select>
+  <!-- add a submit button -->
+  <input type="submit" name="" value="Submit">
+
+<!-- textarea input -->
+<p>Any other feedback? </p>
+<textarea name="mytext" rows="8" cols="80"></textarea>
+<input type="submit" name="" value="Submit">
 </form>
 </html>
