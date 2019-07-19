@@ -13,7 +13,7 @@ body {
 
 /* div containers */
 div {
-background-color:purple;
+background-color:gray;
 border-color:blue;
 border-width:2px; /*thin;*/
 border-style: dotted;
@@ -35,11 +35,66 @@ h1 {
 li {
 
   /* 1. change color with color name */
-  /* color:green; */
+  color:black;
   /* 2. search color picker for rgb values of different colors  */
-  color: rgb(181, 61, 196);
+  /* color: rgb(181, 61, 196); */
    /* 3. use hex code */
-  color: #b53dc4;
+  /* color: #b53dc4; */
   /* 4. rgba, where a stands for alpha to control the transparency */
-  color: rgba(181, 61, 196, 0.5);
+  /* color: rgba(181, 61, 196, 0.5); */
+}
+
+/* class has higher hierachy than general tags */
+.topitems {
+  color:blue
+}
+
+/* id supercede class */
+#two {
+  border: 3px solid black;
+}
+
+/* use classes, use a . to specify that it's a class  */
+.firstDiv {
+  color:lightblue;
+}
+
+
+.secondDiv {
+  color:green;
+}
+
+
+/* use id */
+
+#singledout {
+  color:red;
+  text-decoration: line-through;
+}
+
+
+/* use * to select every element on the html page,
+   will overwrite other settings unless others
+  have an id  */
+
+* {
+  color:black;
+}
+
+
+/* Select all unordered lists that are next to h3 */
+
+h3 + ul {
+  border:4px dotted purple;
+}
+
+
+/* anchor text that are inside a list */
+li a {
+  color:red;
+}
+/* anchor text with a particular href */
+li a[href='http://qianqianshan.com'] {
+  color:blue;
+  border:5px solid orange;
 }
