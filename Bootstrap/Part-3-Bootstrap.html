@@ -1,0 +1,237 @@
+<!-- bootstrap is a framework used for front-end development -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Bootstrap official website is <a href="https://getbootstrap.com/" target = '_blank'>here</a> </h1>
+   <!-- center the words a little bit: use a container class -->
+   <div class="container">
+     <h3>Buttons</h3>
+     <!-- add a button https://getbootstrap.com/docs/4.3/components/buttons/ -->
+     <button type="button" class='btn btn-success btn-sm' name="button">Bootstrap Button</button>
+     <button type="button" class='btn btn-success btn-sm' disabled='disabled' name="button">Disabled</button>
+
+     <h3>Jumbotron</h3>
+     <!-- https://getbootstrap.com/docs/4.3/components/jumbotron/ -->
+     <div class="container">
+       <div class="jumbotron">
+   <h1 class="display-4">Hello, world!</h1>
+   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+   <hr class="my-4">
+   <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+   <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+ </div>
+
+     </div>
+   </div>
+
+   <h3>Forms <a href="https://getbootstrap.com/docs/4.3/components/forms/" target= '_blank'>here</a> </h3>
+   <!-- https://getbootstrap.com/docs/4.3/components/forms/ -->
+  <div class="container">
+    <form>
+      <!-- form groups make the margin spacing nice -->
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <!-- form control rounds the form corners, highlight differently
+        Label and form on different lines ... -->
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Example select</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect2">Example multiple select</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+      <div class="form-group form-check">
+  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+<p>Radio buttons</p>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">1</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">2</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+  <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+</div>
+
+    </form>
+  </div>
+
+  <h3>Nav bars <a href="https://getbootstrap.com/docs/4.3/components/navbar/">here</a> </h3>
+  <!-- remove bg-light if wants customized background color with style -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color: red;">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <h3>Grid at <a href="https://getbootstrap.com/docs/4.0/layout/grid/">here</a> </h3>
+  <p>Grid system provides the core mechanism by which using Bootstrap allows
+     websites to look good across multiple devices of multiple screen sizes.</p>
+  <p>Idea: split the entire screen into 12 columns, then one can use any combination
+     of this number to split up. Use class='row', inside the column, we have
+     format 'col-ScreenSize-NumberofColumns'.</p>
+
+  <style>
+    /* boxy class */
+    .boxy {
+      background:#b3ddff;
+      border:2px solid black;
+    }
+  </style>
+  <div class="container">
+    <!-- grid -->
+   <div class="row">
+     <!-- when screen is large tak 4 cols for this div -->
+     <!-- when screen is small, the following definition didn't work -->
+     <div class="col-lg-4 boxy">
+       Col Large 4
+     </div>
+
+     <div class="col-lg-4 boxy">
+       Col Large 4
+     </div>
+
+     <div class="col-lg-4 boxy">
+       Col Large 4
+     </div>
+   </div>
+  </div>
+
+  <div class="container">
+    <!-- grid -->
+   <div class="row">
+     <!-- when screen is large tak 4 cols for this div -->
+     <!-- when screen is small, the following definition didn't work -->
+     <div class="col-medium-6 boxy">
+       Col medium 4
+     </div>
+
+     <div class="col-medium-6 boxy">
+       Col medium 4
+     </div>
+
+   </div>
+  </div>
+
+  <div class="container">
+    <!-- grid -->
+   <div class="row">
+     <!-- when screen is large tak 4 cols for this div -->
+     <!-- when screen is small, the following definition didn't work -->
+     <div class="col-xs-6 boxy">
+       Col xs 4
+     </div>
+
+     <div class="col-xs-6 boxy">
+       Col xs 4
+     </div>
+
+   </div>
+  </div>
+
+<!-- define different sizes for different screen sizes -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6 boxy">
+       One
+      </div>
+      <div class="col-lg-3 col-sm-6 boxy">
+       Two
+      </div>
+      <div class="col-lg-3 col-sm-6 boxy">
+       Three
+      </div>
+
+      <div class="col-lg-3 col-sm-6 boxy">
+       Four
+      </div>
+    </div>
+  </div>
+<p>Use nested rows </p>
+  <div class="row">
+    <div class="col-lg-6 boxy">
+      <div class="row">
+        <!-- takes only half of screen -->
+        <!-- nested rows -->
+        <div class="col-lg-6 boxy">
+          Nest one
+        </div>
+        <div class="col-lg-6 boxy">
+          Nest two
+        </div>
+       </div>
+     </div>
+    <!-- use the other half of screen -->
+    <div class="col-lg-6 boxy">
+      Top level
+    </div>
+</div>
+
+ </body>
+</html>
